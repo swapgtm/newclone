@@ -24,7 +24,7 @@ p {
 .congratulation-text {
   font-family: 'Fredoka One', cursive;
   font-size: 230%;
-  color:#98018c;
+  color:#F93333;
   margin-top:30%;
   display: none;
 }
@@ -33,7 +33,7 @@ p {
 
 
 .section1 button.pink {
-	background-color: #ff88f5;
+	background-color: #F97E7E;
   font-family: 'Fredoka One', cursive;
   font-size: 30px;
 }
@@ -84,25 +84,25 @@ img {
 
 .section5,
 .section3 {
-  background-color: #ffe4fd;
+  background-color: #F9C9C9;
 }
 
 .section6 h2,
 .section4 h2,
 .section2 h2 {
-  color:#E366B5;
+  color:#604D4D;
 }
 
 .section3 .paragraph,
 .section5 .paragraph {
-  color:#860049;
+  color:#601414;
 }
 
 
 .section3 h2,
 .section5 h2
 {
-  color: #860049;
+  color: #F97E7E;
 }
 
 .section1 h2 {
@@ -110,6 +110,7 @@ img {
 	font-family: 'Fredoka One', cursive;
 	font-size: 300%;
 	text-align: center;
+  color: #000000;
 }
 
 .section3 h2,
