@@ -1,3 +1,9 @@
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Fredoka+One);
 
 .section1 {
@@ -10,7 +16,7 @@
 
 .congratulation-text {
   font-family: 'Fredoka One', cursive;
-  font-size: 100px;
+  font-size: 230%;
   color:#98018c;
   margin-top:10%;
   display: none;
@@ -45,7 +51,7 @@ img.fix-size {
 
 .section1 .login-form {
 	position:absolute;
-    top:30%;
+    top:0;
     right:0;
     left:0;
 }
@@ -97,7 +103,7 @@ img {
 .section6 h2,
 .section2 h2 {
   padding-top:40px;
-	font-family: "Playball";
+	font-family: 'Fredoka One', cursive;
 	font-size: 64px;
 	text-align: center;
 }
