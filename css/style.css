@@ -1,10 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
 
 .section1 {
-	background-color: #fed6fb;
+	background-color: #f9c9c9;
+}
+
+.section2 {
+	background-color: #f9c9c9;
 }
 
 .congratulation-text {
-  font-family: 'Playball';
+  font-family: 'Fredoka One', cursive;
   font-size: 100px;
   color:#98018c;
   margin-top:10%;
@@ -32,7 +37,7 @@ img.fix-size {
 #textMachine {
   height:130px;
   display: none;
-  overflow: hidden;  
+  overflow: hidden;
 
 }
 
@@ -57,8 +62,9 @@ img {
  src: url('../fonts/DB Helvethaica X v3.2.eot?#iefix') format('embedded-opentype'), url('../fonts/DB Helvethaica X v3.2.woff') format('woff'), url('../fonts/DB Helvethaica X v3.2.ttf') format('truetype'), url('../fonts/DB Helvethaica X v3.2.svg#d6a7d8571348c8a262e7f05953d42d15') format('svg');
  /* Legacy iOS */
  font-style: normal;
- font-weight: 400; 
+ font-weight: 400;
 }
+
 
 .section5,
 .section3 {
@@ -78,7 +84,7 @@ img {
 
 
 .section3 h2,
-.section5 h2 
+.section5 h2
 {
   color: #860049;
 }
@@ -139,24 +145,24 @@ img {
   text-align: center;
   text-decoration: none;
   color: #686B70;
-  font-size: 18px;    
+  font-size: 18px;
   position: relative;
   -webkit-transform-origin: top center;
   transform-origin: top center;
-  -webkit-transform: rotate(0deg);         
+  -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .3);
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .3);            
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .3);
 }
 
 
-.polaroids ul li a.shake {                
+.polaroids ul li a.shake {
   -webkit-animation-duration: 4500ms;
   animation-duration: 4500ms;
   -webkit-animation-name: pola;
   animation-name: pola;
   -webkit-transition-timing-function: cubic-bezier(0.655, 0.000, 0.005, 1.000);
-  transition-timing-function: cubic-bezier(0.655, 0.000, 0.005, 1.000); 
+  transition-timing-function: cubic-bezier(0.655, 0.000, 0.005, 1.000);
 }
 
 .polaroids ul a:after { content: attr(title) }
@@ -167,7 +173,7 @@ img {
   margin-bottom: 12px;
 }
 
-@-webkit-keyframes pola { 
+@-webkit-keyframes pola {
 from { -webkit-transform: rotate(0deg) }
 10%  { -webkit-transform: rotate(3deg) }
 20%  { -webkit-transform: rotate(-3deg)}
@@ -180,7 +186,7 @@ from { -webkit-transform: rotate(0deg) }
 90%  { -webkit-transform: rotate(0.2deg) }
 to   { -webkit-transform: rotate(0deg) }
 }
-@keyframes pola { 
+@keyframes pola {
 from { -moz-transform: rotate(0deg) }
 10%  { -moz-transform: rotate(3deg) }
 20%  { -moz-transform: rotate(-3deg)}
