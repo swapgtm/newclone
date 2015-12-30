@@ -1,10 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
+@import url(https://fonts.googleapis.com/css?family=Itim&subset=thai,latin);
+
+p {
+    font-family: 'Itim', cursive;
+}
+
 *{
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
+
 
 .section1 {
 	background-color: #f9c9c9;
@@ -18,7 +25,7 @@
   font-family: 'Fredoka One', cursive;
   font-size: 230%;
   color:#98018c;
-  margin-top:10%;
+  margin-top:30%;
   display: none;
 }
 
@@ -38,6 +45,9 @@ img.fix-size {
 
 .text-error {
   color:red;
+}
+.success{
+  color: #ff7a00;
 }
 
 #textMachine {
@@ -95,8 +105,13 @@ img {
   color: #860049;
 }
 
+.section1 h2 {
+  padding-top:40px;
+	font-family: 'Fredoka One', cursive;
+	font-size: 300%;
+	text-align: center;
+}
 
-.section1 h2,
 .section3 h2,
 .section4 h2,
 .section5 h2,
