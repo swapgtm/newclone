@@ -209,31 +209,13 @@
       });
 
       (function() {
-          var link_element = document.createElement("link"),
-              s = document.getElementsByTagName("script")[0];
-          if (window.location.protocol !== "http:" && window.location.protocol !== "https:") {
-              link_element.href = "http:";
-          }
-          link_element.href += "//fonts.googleapis.com/css?family=Playball:400";
-          link_element.rel = "stylesheet";
-          link_element.type = "text/css";
-          s.parentNode.insertBefore(link_element, s);
-
-          var number = 0;
-
           $('#unlock').on('click', function(event) {
           		event.preventDefault();
           		event.stopPropagation();
 
           		$('#textMachine').css('display', 'inline-block');
-          		var code1 = $('[name="code1"]').val();
-          		var code2 = $('[name="code2"]').val();
-
-          		// Check for '2' in the first box and '8' in the second box
-          		if(code1 === '2' && code2 === '8') {
-          			// success
-          			var machine = $('#textMachine').slotMachine({
-		      	  		active: 0,
+          		var machine = $('#textMachine').slotMachine({
+		      	  		active: 3,
 		      	  		delay: 500,
 		      	  		randomize : function(activeElementIndex){
 							return 3;
@@ -245,23 +227,6 @@
 			      	machine.shuffle(5, function(){
 						answerCorrect();
 					});
-          		} else {
-
-          			if(number == 3) { number = 0; }
-
-          			// fail
-          			var machine = $('#textMachine').slotMachine({
-		      	  		active: 1,
-		      	  		delay: 500,
-		      	  		randomize : function(activeElementIndex){
-							return number;
-						}
-			      	});
-
-			      	machine.shuffle(5, function(){
-						number++;
-					});
-          		}
           });
 
           var answerCorrect = function() {
