@@ -26,10 +26,10 @@
 			</div>
 			<div class="row">
 				<div class="columns medium-offset-4 medium-2">
-					<input type="text" name="code[]" placeholder="?" maxlength="1" class="code text-center">
+					<input type="text" name="code1" placeholder="2" maxlength="1" class="code text-center">
 				</div>
 				<div class="columns medium-2 end">
-					<input type="text" name="code[]" placeholder="?" maxlength="1" class="code text-center">
+					<input type="text" name="code2" placeholder="8" maxlength="1" class="code text-center">
 				</div>
 			</div>
 			<div class="row">
@@ -226,14 +226,11 @@
           		event.stopPropagation();
 
           		$('#textMachine').css('display', 'inline-block');
-          		var code = '';
-          		$.each($('.code'), function(i, v) {
-          			code += $(v).val();
-          		});
+          		var code1 = $('[name="code1"]').val();
+          		var code2 = $('[name="code2"]').val();
 
-          		// Updated to check for '28'
-          		if(code === '28')
-          		{
+          		// Check for '2' in the first box and '8' in the second box
+          		if(code1 === '2' && code2 === '8') {
           			// success
           			var machine = $('#textMachine').slotMachine({
 		      	  		active: 0,
