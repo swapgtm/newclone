@@ -231,7 +231,8 @@
           			code += $(v).val();
           		});
 
-          		if(code.toLowerCase() === 'september')
+          		// Updated to check for '28'
+          		if(code === '28')
           		{
           			// success
           			var machine = $('#textMachine').slotMachine({
